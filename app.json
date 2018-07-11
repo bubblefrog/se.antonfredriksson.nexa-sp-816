@@ -1,0 +1,51 @@
+{
+  "id": "se.antonfredriksson.nexa-sp-816",
+  "version": "0.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Nexa SP-816"
+  },
+  "description": {
+    "en": "Adds support for Nexa SP-816"
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Anton Fredriksson",
+    "email": "a95@live.se"
+  },
+
+
+  "drivers": [
+    {
+      "id": "SP816",
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion",
+        "alarm_tamper",
+        "measure_battery"
+      ],
+      "name": {
+          "en": "SP-816 Motion sensor"
+      },
+      "zwave": {
+          "manufacturerId": 96,
+          "productTypeId": 1,
+          "productId": 5,
+          "learnmode": {
+              "image": "/drivers/SP816/assets/learnmode.svg",
+              "instruction": {
+                  "en": "Click the tamper switch behind the battery cover"
+              }
+          },
+          "associationGroups": [ 1 ]
+      }
+    }]
+}
