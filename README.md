@@ -12,6 +12,8 @@ Adds support for Nexa SP-816
 
 4.  Using the command line (cmd), Go to the directory of the source code.
 
-5. Run the command **athom app install**
+5. Run the command **athom login**
 
-6. Now the app is installed
+6. Run the command **athom app install**
+
+7. Now the app is installed
